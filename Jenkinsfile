@@ -11,5 +11,11 @@ pipeline {
                 sh 'bash scripts/ci.sh'
             }
         }
+
+        stage('Deploy') {
+            steps {
+                sh 'bash scripts/deploy.sh'
+            }
+        }
     }
 }
