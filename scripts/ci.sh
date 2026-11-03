@@ -32,3 +32,6 @@ echo "Running the tests..."
 BASE_URL=http://localhost:8081 python3 tests/test_website.py
 
 echo "Build and tests passed!"
+
+echo "Keeping the test website available for 60 seconds..."
+sleep 60
