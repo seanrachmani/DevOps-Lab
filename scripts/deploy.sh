@@ -3,7 +3,7 @@ set -e
 
 APP="devops-web-v2"
 BACKUP="${APP}-backup"
-URL="http://localhost:8080/missing-page-for-rollback-test"
+URL="http://localhost:8080"
 HAS_BACKUP=0
 
 IMAGE_ID=$(docker image inspect devops-lab:test --format '{{.Id}}')
